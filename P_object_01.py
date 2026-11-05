@@ -20,9 +20,9 @@ def p1 (bsueldo, utilidad ):
 
     return monto
 
-Isueldo = input("Insertar sueldo: ")
+Isueldo = float(input("Insertar sueldo: "))
 
-Iutilidad = input("Insertar Utilidad: ")
+Iutilidad = float(input("Insertar Utilidad: "))
 
 #output
 resultado = p1 (Isueldo,Iutilidad)
