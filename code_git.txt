@@ -1,0 +1,63 @@
+=======================================================================
+               MIS COMANDOS DE GIT - GUÍA RÁPIDA UPC
+=======================================================================
+
+1. CAMBIAR Y PROBAR RAMAS (BRANCHES)
+-----------------------------------------------------------------------
+git branch
+-> Muestra todas tus ramas locales. La actual sale con un "*" verde.
+
+git checkout Dav
+-> Te cambia a tu rama "Dav". (Cambia 'Dav' por el nombre que quieras).
+
+git checkout -b nueva-rama
+-> Crea una rama nueva con ese nombre y te cambia a ella de golpe.
+
+
+2. ACTUALIZAR TU REPOSITORIO (SINCRO CASA / UNIVERSIDAD)
+-----------------------------------------------------------------------
+Al llegar a la universidad (Bajar lo que hiciste en casa):
+git pull origin Dav
+
+Al terminar tus clases (Subir tus avances a GitHub):
+git add .
+git commit -m "Avances de hoy en la universidad"
+git push origin Dav
+
+
+3. CREAR UN REPOSITORIO DESDE CERO
+-----------------------------------------------------------------------
+Pasos para cuando creas una carpeta nueva y la quieres subir a GitHub:
+
+1) git init
+   -> Inicializa Git en la carpeta actual.
+2) git add .
+   -> Prepara todos los archivos.
+3) git commit -m "Primer commit"
+   -> Guarda el estado inicial en tu PC.
+4) git branch -M main
+   -> Renombra la rama principal a 'main'.
+5) git remote add origin https://github.com
+   -> Enlaza tu carpeta local con el link de tu GitHub web.
+6) git push -u origin main
+   -> Sube todo por primera vez y conecta las ramas.
+
+
+4. COMANDOS SALVAVIDAS (DÍA A DÍA)
+-----------------------------------------------------------------------
+git status
+-> El más importante. Te dice en qué rama estás, qué archivos has 
+   modificado y qué te falta por guardar. Usalo a cada rato.
+
+git log --oneline
+-> Te muestra la lista de tus últimos cambios guardados en una sola línea.
+
+git diff
+-> Te enseña las líneas exactas de código que has modificado o borrado
+   desde tu último commit.
+
+git checkout -- nombre_archivo.ext
+-> ¿Malograste un archivo y quieres deshacer los cambios no guardados?
+   Este comando lo regresa a como estaba en el último commit.
+
+=======================================================================
